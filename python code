@@ -1,0 +1,10 @@
+main_string = 'Hello world. My name is jalal lksjdlkj . jhjlkhlkdsjf.lkjasdkjd,lkjjali sajad. laksjdjasdh' \
+              'mamad dskfjslkdj.jasdjhasdhjahsgy uhi uhi hu hi uhasdyagst. '
+
+search = input('enter a string to search: ')
+if search in main_string :
+    start_index = main_string.find(search)
+    end_index = main_string.find('.',start_index)
+    print(main_string[start_index:end_index])
+else:
+    print('not exist')
